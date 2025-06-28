@@ -7,7 +7,7 @@ public class employeMapper {
 
 	public static Employee maptoDto(EmployeDto empdto) {
 		Employee emp = new Employee(empdto.getId(), empdto.getFirstName(), empdto.getLastName(),
-				empdto.getEmployeEmail()
+				empdto.getEmployeEmail(),empdto.getDeptCode()
 
 		);
 		return emp;
@@ -15,7 +15,7 @@ public class employeMapper {
 
 	public static EmployeDto Dtotomap(Employee employe) {
 		EmployeDto empdto = new EmployeDto(employe.getId(), employe.getFirstName(), employe.getLastName(),
-				employe.getEmployeEmail());
+				employe.getEmployeEmail() ,employe.getDeptCode());
 		return empdto;
 
 	}
