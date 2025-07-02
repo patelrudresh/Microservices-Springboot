@@ -50,9 +50,24 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
+<<<<<<< Updated upstream
 =======
 <!-- 	<!-- >>>>>>> main --> -->
+=======
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+>>>>>>> Stashed changes
 
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+			<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>com.oracle.database.jdbc</groupId>
@@ -69,10 +84,10 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-			<dependency>
-    <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
 
 	</dependencies>
 	<dependencyManagement>
@@ -80,6 +95,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
+<<<<<<< Updated upstream
 <!-- <<<<<< for-commincating-to-microservices -->
 			  <version>${spring-cloud.version}</version>
 			  				<type>pom</type>
@@ -87,6 +103,10 @@
 				<version>2024.0.1</version>
 				<type>pom</type>
 <!-- >>>>>> main -->
+=======
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+>>>>>>> Stashed changes
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
