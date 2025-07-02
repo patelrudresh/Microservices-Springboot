@@ -16,7 +16,7 @@ import com.MVC.Employee_service.dto.EmployeDto;
 import com.MVC.Employee_service.serviceImpl.employeServiceImpl;
 
 @RestController
-@RequestMapping("api/employe")
+@RequestMapping("/api/employe")
 public class employeController {
 	
 	@Autowired
@@ -27,7 +27,7 @@ public class employeController {
   return new ResponseEntity<>(employeeservice.createEmployee(empdto),HttpStatus.CREATED);
 	}
 	
-	@GetMapping("{id}")
+	@GetMapping("/{id}")
 	public ResponseEntity<APiResponseDto> getEmployeById(@PathVariable("id") Long empid){
 		APiResponseDto foundemp= employeeservice.getEmployeById(empid);
 		return new ResponseEntity<>(foundemp,HttpStatus.CREATED);
